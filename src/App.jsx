@@ -8,6 +8,7 @@ import CardCursos from "./components/CardCursos";
 const App = () => {
   return (
     <>
+      {/* Este es un comentario */}
       <Hero />
       <SecPatrocinios />
       <SecCursos />
