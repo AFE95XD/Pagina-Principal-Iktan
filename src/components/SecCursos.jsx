@@ -119,14 +119,14 @@ export default function SecCursos() {
                 >
                   <polygon points="50,0 100,0 50,100 0,100" />
                 </svg> */}
-                {/* <svg className="absolute" width="400px" height="300px">
+                <svg className="absolute" width="385px" height="192px">
                   <polygon
-                    fill="orange"
-                    // stroke="black"
+                    className="bg-gradient-to-tl from-red-600"
+                    fill="white"
                     stroke-width="5px"
-                    points="80 230, 180 30, 280 230"
+                    points="0 192, 384 90, 384 192"
                   />
-                </svg> */}
+                </svg>
                 <img
                   className="h-48 w-full object-cover"
                   src={link.imageUrl}
