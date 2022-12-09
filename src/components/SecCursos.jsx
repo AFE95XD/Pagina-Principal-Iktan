@@ -73,7 +73,7 @@ const puntuacion = () => {};
 
 export default function SecCursos() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-100">
       {/* Header la descripcion de las targetas de los cursos*/}
       <div className="relative bg-gray-800 pb-32">
         <div className="absolute inset-0">
@@ -113,8 +113,8 @@ export default function SecCursos() {
               {/* Este div es de la imagen */}
               <div key={link.id} className="flex-shrink-0">
                 <svg
-                  className="absolute rounded-tr-lg"
-                  width="385px"
+                  className="hidden absolute rounded-tr-lg lg:flex w-fit"
+                  width="384px"
                   height="192px"
                 >
                   <polygon
@@ -159,7 +159,7 @@ export default function SecCursos() {
                         precision={0.5}
                         readOnly
                       />
-                      <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                      <span className="bg-blue-100 text-amber-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-amber-200 dark:text-amber-800 ml-3">
                         {link.ranking}
                       </span>
                     </div>
@@ -170,7 +170,7 @@ export default function SecCursos() {
                       </span>
                       <a
                         href="#"
-                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        className="text-white bg-amber-400 hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-amber-400 dark:hover:bg-amber-500 dark:focus:ring-amber-500"
                       >
                         Comprar Ahora
                       </a>

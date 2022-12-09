@@ -20,5 +20,7 @@ module.exports = {
       Alfa: ['Alfa Slab One']
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

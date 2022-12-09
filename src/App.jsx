@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import SecPatrocinios from "./components/SecPatrocinios";
 import SecCursos from "./components/SecCursos";
 import Footer from "./components/Footer";
+import SecContacto from "./components/SecContacto";
+import SecPreguntas from "./components/SecPreguntas";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Hero />
       <SecPatrocinios />
       <SecCursos />
+      <SecContacto />
+      <SecPreguntas />
       <Footer />
     </>
   );
