@@ -12,6 +12,7 @@ module.exports = {
       colors: {
           'warm-gray': colors.stone,
           teal: colors.teal,
+          rose: colors.rose,
         },
     },
     fontFamily: {

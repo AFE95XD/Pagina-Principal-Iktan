@@ -5,17 +5,20 @@ import SecCursos from "./components/SecCursos";
 import Footer from "./components/Footer";
 import SecContacto from "./components/SecContacto";
 import SecPreguntas from "./components/SecPreguntas";
+import Precios from "./components/precios/Precios";
 
 const App = () => {
   return (
     <>
-      {/* Este es un comentario */}
-      <Hero />
+      {/* Estos componentes son para la pagina principal */}
+      {/* <Hero />
       <SecPatrocinios />
       <SecCursos />
       <SecContacto />
       <SecPreguntas />
-      <Footer />
+      <Footer /> */}
+      {/* Estste es para la pagina de precios */}
+      <Precios />
     </>
   );
 };
