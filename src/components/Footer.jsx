@@ -1,15 +1,14 @@
 const footerNavigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+    { name: "IKTAN Strategies", href: "#" },
+    { name: "IKTAN Protect", href: "#" },
+    { name: "IKTAN Technologies", href: "#" },
+    { name: "IKTAN Training", href: "#" },
   ],
   support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+    { name: "Precios", href: "#" },
+    { name: "Preguntas Frecuentes", href: "#" },
+    { name: "Contacto", href: "#" },
   ],
   company: [
     { name: "About", href: "#" },
@@ -87,8 +86,8 @@ const Footer = () => {
             <div className="space-y-8 xl:col-span-1">
               <img
                 className="h-10"
-                src="./src/assets/LOGO IKTAN TRAINING.svg"
-                alt="Company name"
+                src="./src/assets/LOGO IKTAN TRAINING FOOTER.svg"
+                alt="IKTAN Training"
               />
               <p className="text-base text-warm-gray-400">
                 Making the world a better place through constructing elegant
@@ -111,7 +110,7 @@ const Footer = () => {
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-base font-medium text-warm-gray-200">
-                    Solutions
+                    Servicios
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {footerNavigation.solutions.map((item) => (
@@ -128,7 +127,7 @@ const Footer = () => {
                 </div>
                 <div className="mt-12 md:mt-0">
                   <h3 className="text-base font-medium text-warm-gray-200">
-                    Support
+                    Soporte
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {footerNavigation.support.map((item) => (
@@ -147,7 +146,7 @@ const Footer = () => {
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-base font-medium text-warm-gray-200">
-                    Company
+                    company
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {footerNavigation.company.map((item) => (
@@ -162,7 +161,10 @@ const Footer = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-12 md:mt-0">
+                {/**
+                 * TODO: ESTE LO DEJE COMENTADO POR SI SE VA A INGRESAR OTRA COLUMNA QUE BIEN SE PUEDE ELIMINAR
+                 */}
+                {/* <div className="mt-12 md:mt-0">
                   <h3 className="text-base font-medium text-warm-gray-200">
                     Legal
                   </h3>
@@ -178,7 +180,7 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

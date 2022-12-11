@@ -1,56 +1,48 @@
-import Header from "../Header";
 import HeadPrecios from "./HeadPrecios";
 import { CheckIcon } from "@heroicons/react/24/outline";
+import Header from "../Header";
+import SecPreguntas from "../SecPreguntas";
+import Footer from "../Footer";
 
 const pricing = {
   tiers: [
     {
-      title: "Freelancer",
-      price: 24,
-      frequency: "/month",
-      description: "The essentials to provide your best work for clients.",
-      features: [
-        "5 products",
-        "Up to 1,000 subscribers",
-        "Basic analytics",
-        "48-hour support response time",
-      ],
-      cta: "Monthly billing",
-      mostPopular: false,
-    },
-    {
-      title: "Startup",
+      title: "Personal",
       price: 32,
-      frequency: "/month",
-      description: "A plan that scales with your rapidly growing business.",
+      frequency: "/ Persona",
+      description: "Plan especializado para que aprendas a tu ritmo.",
       features: [
-        "25 products",
-        "Up to 10,000 subscribers",
-        "Advanced analytics",
-        "24-hour support response time",
-        "Marketing automations",
+        "1 Persona",
+        "Acceso ilimitado con tu cuenta",
+        "Certificado digital del curso",
+        "Actualizaciones periodicas",
+        "Soporte",
       ],
-      cta: "Monthly billing",
+      cta: "Comprar ahora",
       mostPopular: true,
     },
     {
-      title: "Enterprise",
+      title: "Empresarial",
       price: 48,
-      frequency: "/month",
-      description: "Dedicated support and infrastructure for your company.",
+      frequency: "/ Equipo",
+      description: "Dedicado para ayudar a tu equipo de forma efectiva.",
       features: [
-        "Unlimited products",
-        "Unlimited subscribers",
-        "Advanced analytics",
-        "1-hour, dedicated support response time",
-        "Marketing automations",
-        "Custom integrations",
+        "Equipo mas de 15 personas",
+        "Acceso ilimitado con tu cuenta",
+        "Certificado digital del curso",
+        "Actualizaciones periodicas",
+        "Soporte",
+        "Incorporacion de mas estudiantes",
       ],
-      cta: "Monthly billing",
+      cta: "Comprar ahora",
       mostPopular: false,
     },
   ],
 };
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 const Precios = () => {
   return (
@@ -58,13 +50,13 @@ const Precios = () => {
       <Header />
       <HeadPrecios />
       {/* Pricing Section */}
-      <section className="relative" aria-labelledby="pricing-heading">
+      <section className="relative pb-16" aria-labelledby="pricing-heading">
         <h2 id="pricing-heading" className="sr-only">
           Pricing
         </h2>
 
         {/* Tiers */}
-        <div className="mx-auto max-w-2xl space-y-12 px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:space-y-0 lg:px-8">
+        <div className="mx-auto max-w-2xl space-y-12 px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:space-y-0 lg:px-8">
           {pricing.tiers.map((tier) => (
             <div
               key={tier.title}
@@ -75,7 +67,7 @@ const Precios = () => {
                   {tier.title}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-rose-500 py-1.5 px-4 text-sm font-semibold text-white">
+                  <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-amber-500 py-1.5 px-4 text-sm font-semibold text-white">
                     Most popular
                   </p>
                 ) : null}
@@ -94,7 +86,7 @@ const Precios = () => {
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex">
                       <CheckIcon
-                        className="h-6 w-6 flex-shrink-0 text-rose-500"
+                        className="h-6 w-6 flex-shrink-0 text-amber-500"
                         aria-hidden="true"
                       />
                       <span className="ml-3 text-gray-500">{feature}</span>
@@ -107,8 +99,8 @@ const Precios = () => {
                 href="#"
                 className={classNames(
                   tier.mostPopular
-                    ? "bg-rose-500 text-white hover:bg-rose-600"
-                    : "bg-rose-50 text-rose-700 hover:bg-rose-100",
+                    ? "bg-amber-400 text-white hover:bg-amber-500"
+                    : "bg-amber-50 text-amber-700 hover:bg-amber-100",
                   "mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
                 )}
               >
@@ -118,6 +110,8 @@ const Precios = () => {
           ))}
         </div>
       </section>
+      <SecPreguntas />
+      <Footer />
     </>
   );
 };
