@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import SecContacto from "./components/SecContacto";
 import SecPreguntas from "./components/SecPreguntas";
 import Precios from "./components/precios/Precios";
+import MenuDesp from "./components/menuDespegable/MenuDesp";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       <SecPreguntas />
       <Footer /> */}
       {/* Estste es para la pagina de precios */}
-      <Precios />
+      {/* <Precios /> */}
+      <MenuDesp />
     </>
   );
 };
